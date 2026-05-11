@@ -1,0 +1,9 @@
+services:
+  frontend:
+    build:
+      context: ./fe
+      dockerfile: Dockerfile
+    container_name: bida-frontend
+    ports:
+      - "5173:5173"
+    restart: unless-stopped
